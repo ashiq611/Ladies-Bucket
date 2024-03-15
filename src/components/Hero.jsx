@@ -1,7 +1,7 @@
-import { Carousel } from "react-responsive-carousel";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import c1 from "../assets/image 4.png";
-import c2 from "../assets/image 5.png";
+
 import c3 from "../assets/image 6.png";
 import catagory1 from "../assets/Dress Front View.png";
 import catagory2 from "../assets/T-Shirt.png";
@@ -19,6 +19,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -72,12 +73,14 @@ const Hero = () => {
               placeholder="Search Your Products"
               className="input input-bordered join-item w-full"
             />
-            <button className="btn btn-primary join-item">Search</button>
+            <button className="btn join-item button text-white">
+              Search <FaSearch />
+            </button>
           </div>
-          <p>
+          <p className="text-xl text-[#C50076]">
             <IoCartOutline />
           </p>
-          <p>
+          <p className="text-xl text-[#C50076]">
             <FaRegHeart />
           </p>
         </div>

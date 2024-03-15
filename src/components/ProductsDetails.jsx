@@ -1,5 +1,5 @@
 import c1 from "../assets/image 4.png";
-import c2 from "../assets/image 5.png";
+
 import c3 from "../assets/image 6.png";
 import Description from "./Description";
 import { MdOutlineShoppingCart } from "react-icons/md";
