@@ -2,6 +2,7 @@ import c1 from "../assets/image 4.png";
 import c2 from "../assets/image 5.png";
 import c3 from "../assets/image 6.png";
 import Description from "./Description";
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const ProductsDetails = () => {
   return (
@@ -23,10 +24,10 @@ const ProductsDetails = () => {
                 <select
                   name="size"
                   id="size"
-                  className="select select-bordered w-full max-w-xs"
+                  className="select select-bordered w-16  max-w-xs"
                 >
                   <option disabled selected>
-                    Select Size
+                    S
                   </option>
                   <option>S</option>
                   <option>M</option>
@@ -37,10 +38,10 @@ const ProductsDetails = () => {
                 <select
                   name="color"
                   id="color"
-                  className="select select-bordered w-full max-w-xs"
+                  className="select select-bordered w-16  max-w-xs"
                 >
                   <option disabled selected>
-                    Select Color
+                    Red
                   </option>
                   <option>Red</option>
                   <option>Blue</option>
@@ -61,11 +62,11 @@ const ProductsDetails = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-5 mt-4">
-                <button className="btn btn-xs lg:btn-sm btn-success">
+                <button className="btn btn-xs lg:btn-sm bg-white border border-1 border-black">
                   Add to Cart
                 </button>
-                <button className="btn btn-xs lg:btn-sm btn-info">
-                  Buy Now
+                <button className="btn btn-xs lg:btn-sm button text-white">
+                  Buy Now <MdOutlineShoppingCart />
                 </button>
               </div>
             </div>
@@ -73,7 +74,7 @@ const ProductsDetails = () => {
           <Description />
         </div>
         <div className="w-full lg:w-1/3 h-full sticky top-20 z-40">
-          <img className="w-full h-full" src={c2} alt="add1" />
+          <img className="w-full h-full" src={c3} alt="add1" />
           <img className="w-full h-full" src={c3} alt="add2" />
         </div>
       </div>

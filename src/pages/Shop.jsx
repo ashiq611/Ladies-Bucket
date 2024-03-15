@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Products from "../components/Products";
 import ProductsDetails from "../components/ProductsDetails";
+import Card from "../components/Card";
 import Headline from './../components/Headline';
 
 
@@ -11,7 +12,7 @@ const Shop = () => {
             <Navbar/>
             <ProductsDetails/>
             <Headline title={"You may Also Like"}/>
-            <Products/>
+            <Card/>
             <Footer/>
         </div>
     );
