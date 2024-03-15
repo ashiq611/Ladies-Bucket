@@ -2,21 +2,21 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 import ProductsDetails from "../components/ProductsDetails";
-import Card from "../components/card";
+import Card from "../components/Card";
 
-import Headline from './../components/Headline';
 
+import Headline from "./../components/Headline";
 
 const Shop = () => {
-    return (
-        <div>
-            <Navbar/>
-            <ProductsDetails/>
-            <Headline title={"You may Also Like"}/>
-            <Card/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <ProductsDetails />
+      <Headline title={"You may Also Like"} />
+      <Card />
+      <Footer />
+    </div>
+  );
 };
 
 export default Shop;

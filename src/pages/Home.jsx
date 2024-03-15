@@ -1,10 +1,11 @@
-import Card from "../components/Card";
+
 import CompanyHead from "../components/CompanyHead";
 import Footer from "../components/Footer";
 import Headline from "../components/Headline";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import Products from "../components/Products";
+import Card from "../components/Card";
+
 
 const Home = () => {
   return (

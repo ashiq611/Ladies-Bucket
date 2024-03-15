@@ -27,18 +27,19 @@ const Footer = () => {
             <a className="link link-hover">Press kit</a>
           </nav>
           <form>
-            <h6 className="footer-title">Newsletter</h6>
+            <h6 className="footer-title">Contact Us</h6>
             <fieldset className="form-control w-80">
-              <label className="label">
-                <span className="label-text">Enter your email address</span>
-              </label>
-              <div className="join">
+              <div className="flex flex-col gap-2">
                 <input
                   type="text"
-                  placeholder="username@site.com"
+                  placeholder="Email"
                   className="input input-bordered join-item"
                 />
-                <button className="btn btn-primary join-item">Subscribe</button>
+                <textarea
+                  className="textarea textarea-accent"
+                  placeholder="Message"
+                ></textarea>
+                <button className="btn bg-[#660062] text-white border-[#660062] btn-xs hover:text-black">Send</button>
               </div>
             </fieldset>
           </form>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/company-logo.png";
 
 const Login = () => {
@@ -37,11 +38,24 @@ const Login = () => {
                   className="input input-bordered"
                   required
                 />
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
+                <div className="flex justify-between">
+                  <label className="label">
+                    <Link
+                      to="/forgot"
+                      className="label-text-alt link link-hover"
+                    >
+                      Forgot password?
+                    </Link>
+                  </label>
+                  <label className="label">
+                    <Link
+                      to="/register"
+                      className="label-text-alt link link-hover"
+                    >
+                      New Here! Register
+                    </Link>
+                  </label>
+                </div>
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
