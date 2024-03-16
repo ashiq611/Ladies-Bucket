@@ -1,7 +1,7 @@
 const CompanyHead = () => {
   return (
-    <div className="text-center mt-2">
-      <h2
+    <div className="">
+      {/* <h2
         className="text-3xl capitalize font-bold text "
         style={{
           backgroundImage:
@@ -11,7 +11,13 @@ const CompanyHead = () => {
         }}
       >
         Ladies-Bucket.Com
-      </h2>
+      </h2> */}
+      <marquee
+        scrollAmount="3"
+        className="h-10 leading-10 bg-pink-900 text-2xl font-bold text-white"
+      >
+        EXCLUSIVE OFFER!!!!!!!! 50%
+      </marquee>
     </div>
   );
 };

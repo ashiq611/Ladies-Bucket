@@ -1,67 +1,87 @@
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import NavSearch from "../components/NavSearch";
+import { FiCamera } from "react-icons/fi";
 
 const MyAccount = () => {
-  // Dummy user data
-  const user = {
-    name: "John Doe",
-    email: "john@example.com",
-    address: "123 Main St, City, Country",
-    // Add more user details as needed
-  };
-
-  // Dummy order data
-  const orders = [
-    { id: 1, date: "2024-03-15", total: 50 },
-    { id: 2, date: "2024-03-14", total: 70 },
-    // Add more order details as needed
-  ];
   return (
-    <div>
-      <Navbar />
-      <header className="bg-[#C50076] opacity-80 text-white p-4">
-        <nav className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">My Account</h1>
-          <ul className="flex space-x-4">
-            <li className="hover:text-gray-300 cursor-pointer">Orders</li>
-            <li className="hover:text-gray-300 cursor-pointer">Settings</li>
-            <li className="hover:text-gray-300 cursor-pointer">Logout</li>
-          </ul>
-        </nav>
-      </header>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
-          <div className="p-4">
-            <h2 className="text-xl font-semibold mb-2">User Information</h2>
-            <div>
-              <div className="avatar online">
-                <div className="w-24 rounded-full">
+    <div className="m-h-screen">
+      <NavSearch />
+
+      <div className="container mx-auto mt-2 mb-2">
+        <div>
+          <h2 className="text-[#660062] text-xl font-semibold mb-2">
+            My Wishlist
+          </h2>
+          <button className="btn text-left w-full bg-[#CD298C] text-white">
+            Add Account Info
+          </button>
+        </div>
+        <div className="w-full flex  justify-center p-10 ">
+          <div className="flex justify-center flex-wrap">
+            <div className="text-center lg:border border-1 border-[#CD298C] p-10 lg:p-20 rounded-s-lg">
+              <div className="relative avatar mt-2">
+                <div className="badge absolute bottom-0 right-0 z-20 bg-[#660062] w-8 text-white ">
+                  <FiCamera />
+                </div>
+                <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                   <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                 </div>
               </div>
-              <p>
-                <span className="font-semibold">Name:</span> {user.name}
-              </p>
-              <p>
-                <span className="font-semibold">Email:</span> {user.email}
-              </p>
-              <p>
-                <span className="font-semibold">Address:</span> {user.address}
-              </p>
-              {/* Add more user details here */}
+              <div className="flex flex-col gap-2">
+                <h3 className="text-xl ">Hasan Mollah</h3>
+                <button className="btn btn-sm lg:btn-md bg-[#CD298C] text-white">
+                  Verify Account
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="p-4">
-            <h2 className="text-xl font-semibold mb-2">Orders</h2>
-            <ul>
-              {orders.map((order) => (
-                <li key={order.id}>
-                  <p>Date: {order.date}</p>
-                  <p>Total: ${order.total}</p>
-                  {/* Add more order details here */}
-                </li>
-              ))}
-            </ul>
+            <div className="lg:border border-1 border-[#CD298C] p-10 lg:p-20 rounded-r-lg">
+              <h3 className="text-xl font-semibold">Profile</h3>
+              <label className="form-control w-full max-w-xs">
+                <div className="label">
+                  <span className="label-text">Name</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Type here"
+                  className="input input-bordered w-full max-w-xs"
+                />
+              </label>
+              <label className="form-control w-full max-w-xs">
+                <div className="label">
+                  <span className="label-text">Mobile</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Type here"
+                  className="input input-bordered w-full max-w-xs"
+                />
+              </label>
+              <label className="form-control w-full max-w-xs">
+                <div className="label">
+                  <span className="label-text">Email</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Type here"
+                  className="input input-bordered w-full max-w-xs"
+                />
+              </label>
+              <label className="form-control w-full max-w-xs">
+                <div className="label">
+                  <span className="label-text">Address</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Type here"
+                  className="input input-bordered w-full max-w-xs"
+                />
+              </label>
+              <div className="form-control mt-6">
+                <button className="btn btn-sm lg:btn-md bg-[#CD298C] text-white">
+                  Save
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -5,11 +5,21 @@ import Headline from "../components/Headline";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
+import RateModal from "../components/RateModal";
+import Feedback from "../components/Feedback";
 
 
 const Home = () => {
   return (
     <div>
+      {/* Open the modal using document.getElementById('ID').showModal() method */}
+      <button
+        className="btn"
+        onClick={() => document.getElementById("my_modal_5").showModal()}
+      >
+        open modal
+      </button>
+      <Feedback/>
       <Navbar />
       <CompanyHead />
       <Hero />
