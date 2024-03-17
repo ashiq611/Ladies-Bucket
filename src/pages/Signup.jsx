@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/company-logo.png";
+import { FaShoppingBag } from "react-icons/fa";
 
 const Signup = () => {
   return (
@@ -13,6 +15,17 @@ const Signup = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
+            <label className="label">
+              <Link
+                to="/"
+                className="label-text-alt link link-hover text-[#660062] font-bold"
+              >
+                For Visit Our Website{" "}
+                <span className="inline-block">
+                  <FaShoppingBag />
+                </span>
+              </Link>
+            </label>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body">
@@ -52,6 +65,11 @@ const Signup = () => {
               <div className="form-control mt-6">
                 <button className="btn btn-success">Signup</button>
               </div>
+              <label className="label">
+                <Link to="/login" className="label-text-alt link link-hover">
+                  Already have an account?
+                </Link>
+              </label>
             </form>
           </div>
         </div>

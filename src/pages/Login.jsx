@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/company-logo.png";
+import { FaShoppingBag } from "react-icons/fa";
 
 const Login = () => {
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
+          <div className=" lg:text-left">
             <img src={logo} alt="" />
             <h1 className="text-5xl font-bold text-[#660062]">Login now!</h1>
             <p className="py-6">
@@ -14,6 +15,17 @@ const Login = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
+            <label className="label">
+              <Link
+                to="/"
+                className="label-text-alt link link-hover text-[#660062] font-bold"
+              >
+                For Visit Our Website{" "}
+                <span className="inline-block">
+                  <FaShoppingBag />
+                </span>
+              </Link>
+            </label>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body">
