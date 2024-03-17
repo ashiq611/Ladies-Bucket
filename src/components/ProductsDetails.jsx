@@ -62,7 +62,7 @@ const ProductsDetails = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-5 mt-4">
-                <button className="btn btn-xs lg:btn-sm bg-white border border-1 border-black">
+                <button className="btn btn-xs lg:btn-sm bg-white border border-1 border-[#C50076] text-[#C50076]">
                   Add to Cart
                 </button>
                 <button className="btn btn-xs lg:btn-sm button text-white">

@@ -10,6 +10,7 @@ import Shop from "./pages/Shop";
 import Signup from "./pages/Signup";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+import ShopProductDetail from "./pages/ShopProductDetail";
 
 function App() {
   return (
@@ -21,11 +22,11 @@ function App() {
 
           <Route path="/register" element={<Signup />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/product-details/:id" element={<ShopProductDetail />} />
           <Route path="/Clothing" element={<Clothing />} />
           <Route path="/wishlist" element={<MyWishlist />} />
           <Route path="/orderlist" element={<MyOrderlist />} />
 
-          
           <Route path="/shipping-details" element={<ShippingDetails />} />
           <Route path="/account" element={<MyAccount />} />
         </Routes>

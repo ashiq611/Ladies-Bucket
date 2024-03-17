@@ -22,10 +22,14 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 
 import Categories from "./Categories";
+import MobileCategories from "./MobileCategories";
 
 const Hero = () => {
   return (
     <div className="w-full  flex flex-col lg:flex-row mt-2">
+      <div className="w-full lg:w-1/4 h-full lg:px-12 lg:py-5  lg:hidden">
+        <MobileCategories/>
+      </div>
       <div className="w-full lg:w-1/4 h-full lg:px-12 lg:py-5 hidden lg:block">
         <Categories title="Categories" />
       </div>

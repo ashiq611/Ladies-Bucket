@@ -9,13 +9,13 @@ const NavSearch = () => {
     <div>
       <div className="navbar bg-[#FBEEF6] border bottom-1 border-[#FF44CB] sticky top-0 z-50 flex-col lg:flex-row">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">
+          <Link to="/" className="btn btn-ghost text-xl">
             <img
               className="w-20 object-contain"
               src={companyLogo}
               alt="Ladies-Bucket"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex-none gap-2">
           <div className="join w-full lg:mt-2 mb-2">
@@ -46,25 +46,25 @@ const NavSearch = () => {
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a className="justify-between">
+                <Link to="/account" className="justify-between">
                   Profile
                   <span className="badge">New</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a>Wishlist</a>
+                <Link to="/wishlist">Wishlist</Link>
               </li>
               <li>
                 <Link to="/orderlist">My Orders</Link>
               </li>
               <li>
-                <a>Reviews & Ratings</a>
+                <Link>Reviews & Ratings</Link>
               </li>
               <li>
-                <a>Logout</a>
+                <Link>Logout</Link>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ const NavSearch = () => {
               <img className="w-8" src={Us} alt="" />
             </div>
             <div className="block text-xl">
-              <Link to="/cart">
+              <Link to="/wishlist">
                 <MdOutlineAddShoppingCart />
               </Link>
             </div>

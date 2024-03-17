@@ -43,13 +43,13 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost">
+        <Link to="/" className="btn btn-ghost">
           <img
             className="w-20 object-contain"
             src={companyLogo}
             alt="Ladies-Bucket"
           />
-        </a>
+        </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-semibold">

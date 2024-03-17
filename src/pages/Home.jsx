@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import RateModal from "../components/RateModal";
 import Feedback from "../components/Feedback";
+import OursShow from "../components/OursShow";
 
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
       <Card />
       <Headline title={"New Arrivals"} />
       <Card />
+      <OursShow/>
       <Footer />
     </div>
   );
